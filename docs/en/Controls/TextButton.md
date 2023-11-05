@@ -3,8 +3,9 @@
 Buttons allow users to take actions, and make choices, with a single tap.
 Text buttons are typically used for less-pronounced actions, including those located: in dialogs, in cards. In cards, text buttons help maintain an emphasis on card content.
 
+<div align="center">
 <img align="center" src=https://i.ibb.co/7RbpCHN/Control-V-8.png />
-
+</div>
 
 ## Package
 
