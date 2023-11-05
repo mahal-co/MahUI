@@ -12,7 +12,7 @@ MahUI is a Free & Open-Source UI Kit for .NET MAUI. It provides a set of control
 MahUI is available on [GitHub](https://github.com/mahal-co/MahUI)
 
 ## Contributing
-We welcome contributions and suggestions. Please read our [contributing guide](https://github.com/mahal-co/MahUI/CONTRIBUTING.md).
+We welcome contributions and suggestions. Please read our [contributing guide](https://github.com/mahal-co/MahUI/blob/develop/CONTRIBUTING.md).
 
 ## Support
 If you like this project and want to support it, you can sponsor it on [BuyMeACoffee](https://www.buymeacoffee.com/isaaholic).
