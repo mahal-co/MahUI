@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="this"
+             x:Class="MahUI.Controls.TextButton">
+    <HorizontalStackLayout Padding="0">
+        <Image HeightRequest="{Binding Source={x:Reference this},Path=Size}" VerticalOptions="CenterAndExpand" Source="{Binding Source={x:Reference this},Path=StartIcon}" />
+        <Label
+        Text="{Binding Source={x:Reference this},Path=Text}"
+        TextColor="{Binding Source={x:Reference this},Path=TextColor}"
+        FontSize="{Binding Source={x:Reference this},Path=Size}"
+        >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Clicked" Command="{Binding Source={x:Reference this},Path=Command}" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Image HeightRequest="{Binding Source={x:Reference this},Path=Size}" VerticalOptions="CenterAndExpand" Source="{Binding Source={x:Reference this},Path=EndIcon}" />
+    </HorizontalStackLayout>
+</ContentView>

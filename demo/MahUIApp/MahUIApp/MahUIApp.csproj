@@ -52,4 +52,10 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Reference Include="MahUI">
+	    <HintPath>..\..\..\src\MahUI\bin\Debug\net7.0\MahUI.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
 </Project>

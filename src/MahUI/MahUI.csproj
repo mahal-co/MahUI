@@ -18,7 +18,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Controls\" />
+	  <MauiXaml Update="Controls\TextButton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

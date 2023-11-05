@@ -1,4 +1,6 @@
-﻿namespace MahUIApp
+﻿using System.Windows.Input;
+
+namespace MahUIApp
 {
     public partial class MainPage : ContentPage
     {
@@ -7,18 +9,15 @@
         public MainPage()
         {
             InitializeComponent();
-        }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
+            ICommand buttonCommand = new Command(() =>
+            {
+                // Handle the command execution (e.g., navigate to another page)
+                DisplayAlert("Button Clicked", "The button was clicked!", "OK");
+            });
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            tButton.Command = buttonCommand;
+            tButton2.Command = buttonCommand;
         }
     }
 }
